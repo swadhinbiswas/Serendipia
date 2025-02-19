@@ -69,13 +69,13 @@ Serendia is not just another study tool. It's an intelligent AI agent designed t
 
 ---
 
-## Contact
+<!-- ## Contact
 
 For any questions or inquiries, please contact us at:
 
 * Email: [your.email@example.com]
-* Website: [your website URL]
+* Website: [your website URL] -->
 
 ---
-
-**Empower your learning journey with Serendia, your dedicated AI study partner.**
+<!-- 
+**Empower your learning journey with Serendia, your dedicated AI study partner.** -->
