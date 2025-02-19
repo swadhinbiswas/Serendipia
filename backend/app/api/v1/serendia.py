@@ -60,6 +60,8 @@ async def get_session(
     sessions = db.query(Chatsession).filter(Chatsession.user_id == user.id).all().order_by(Chatsession.created_at.desc())
     return sessions.order_by(Chatsession.created_at.desc())
 
+
+
 @airouter.get("/session/{session_id}", response_model=SessionCreateResponse)
 async def get_session_by_id(
     session_id: str, db: Session = Depends(database.get_db)

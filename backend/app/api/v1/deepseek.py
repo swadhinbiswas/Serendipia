@@ -1,8 +1,11 @@
 from openai import OpenAI
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 client = OpenAI(
-    base_url="https://api-inference.huggingface.co/v1/",
-    api_key="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",
+    base_url=os.getenv("BASEURLFORHUGGINGFACE"),
+    api_key=os.getenv("HG_DEEPSHEEKKEY"),
 )
 
 messages = [
