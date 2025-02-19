@@ -106,6 +106,6 @@ response = requests.post(
 if response.status_code == 200:
     for chunk in response.iter_content(chunk_size=None):
         if chunk:  # Filter out keep-alive chunks
-            print(chunk.decode("utf-8"), end="", flush=True)  # Print in real-time
+            print(chunk.decode("utf-8"), end="", flush=True) # Print in real-time
 else:
     print(f"Error: {response.status_code} - {response.text}")
