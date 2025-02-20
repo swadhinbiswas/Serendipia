@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
-    <img width=200px height=200px src="./assets/Serendia.png" alt="Serendipia Logo">
+    <img width=200px height=200px src="./assets/serendia.png" alt="Serendipia Logo">
   </a>
 </p>
 
