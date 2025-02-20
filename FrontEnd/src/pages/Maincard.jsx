@@ -103,7 +103,7 @@ const MainCard = () => {
     "https://source.unsplash.com/200x200/?ai,model5",
     "https://source.unsplash.com/200x200/?ai,model6",
     "https://source.unsplash.com/200x200/?ai,model7",
-    "https://source.unsplash.com/200x200/?ai,model8",
+    "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/britishman.jpg",
     "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/female2.webp",
   ];
 
