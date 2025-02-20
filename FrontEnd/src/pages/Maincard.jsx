@@ -90,13 +90,12 @@ const MainCard = () => {
   };
 
   const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentVoiceIndex, setCurrentVoiceIndex] = useState(0);
   const [audioCache, setAudioCache] = useState({});
 
   const images = [
-    "",
+    "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/female1.jpg",
     "https://source.unsplash.com/200x200/?ai,model2",
     "https://source.unsplash.com/200x200/?ai,model3",
     "https://source.unsplash.com/200x200/?ai,model4",
@@ -104,7 +103,7 @@ const MainCard = () => {
     "https://source.unsplash.com/200x200/?ai,model6",
     "https://source.unsplash.com/200x200/?ai,model7",
     "https://source.unsplash.com/200x200/?ai,model8",
-    "https://source.unsplash.com/200x200/?ai,model9",
+    "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/female2.webp",
   ];
 
   const currentVoice = voiceData.voices[currentVoiceIndex];
