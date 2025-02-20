@@ -90,6 +90,7 @@ const MainCard = () => {
   };
 
   const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentVoiceIndex, setCurrentVoiceIndex] = useState(0);
   const [audioCache, setAudioCache] = useState({});
