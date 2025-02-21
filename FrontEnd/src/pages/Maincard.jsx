@@ -98,7 +98,7 @@ const MainCard = () => {
   const images = [
     "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/female1.jpg",
     "https://source.unsplash.com/200x200/?ai,model2",
-    "https://source.unsplash.com/200x200/?ai,model3",
+    "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/female3.png",
     "https://source.unsplash.com/200x200/?ai,model4",
     "https://source.unsplash.com/200x200/?ai,model5",
     "https://source.unsplash.com/200x200/?ai,model6",
