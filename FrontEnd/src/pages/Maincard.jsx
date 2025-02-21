@@ -352,7 +352,7 @@ const MainCard = () => {
     "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/female1.jpg",
     "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/man2.png",
     "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/female3.png",
-    "https://source.unsplash.com/200x200/?ai,model4",
+    "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/male3.png",
     "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/women4.jpg",
     "https://source.unsplash.com/200x200/?ai,model6",
     "https://raw.githubusercontent.com/swadhinbiswas/Serendipia/refs/heads/main/FrontEnd/src/assets/agentsphoto/boy1.png",
