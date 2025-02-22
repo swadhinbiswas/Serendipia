@@ -3,6 +3,7 @@ import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import MainCard from "./Maincard";
+import { Morph } from "../components/morph";
 import {
   Sparkles,
   Users,
@@ -60,12 +61,12 @@ const features = [
     Icon: Users,
     name: (
       <div className="text-4xl font-extrabold bg-gradient-to-r from-blue-400 to-indigo-600 bg-clip-text text-transparent">
-        12K
+        12K+
       </div>
     ),
     description: (
       <div>
-        <div className="text-sm text-slate-700 font-medium">Happy Users</div>
+        <div className="text-sm text-slate-700 font-medium">P2P </div>
         <div className="flex -space-x-3 mt-4">
           <div className="w-10 h-10 rounded-full ring-2 ring-white bg-gradient-to-br from-blue-400 to-indigo-500 shadow-md shadow-blue-400/30"></div>
           <div className="w-10 h-10 rounded-full ring-2 ring-white bg-gradient-to-br from-indigo-400 to-blue-500 shadow-md shadow-indigo-400/30"></div>
@@ -147,10 +148,12 @@ export default function PromptPalDashboard() {
         <div className="mt-8 flex justify-center">
           <Button className="py-6 px-10 text-lg bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 shadow-lg hover:shadow-blue-500/50 transition-all duration-300 rounded-full text-white">
             <Sparkles className="mr-2 text-white" size={20} />
-            Generate
+            Discover
           </Button>
         </div>
+        
       </div>
+
     </div>
   );
 }

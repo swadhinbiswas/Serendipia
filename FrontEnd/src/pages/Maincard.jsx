@@ -1,5 +1,3 @@
-
-
 import React, { useEffect, useRef, useState, useMemo } from "react";
 import { ArrowLeft, ArrowRight, Volume2, Sparkles } from "lucide-react";
 
