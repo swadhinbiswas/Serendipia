@@ -6,15 +6,17 @@ import PromptPalDashboard from "./pages/PromptPalDashboard";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 
+
 function App() {
-  const [count, setCount] = useState(0);
+
 
   return (
     <Router>
       <Routes>
-        {/* Define the home route */}
+      
         <Route path="/" element={<PromptPalDashboard />} />
         <Route path="/home"element={<Homepage/>}/>
+
       </Routes>
     </Router>
   );

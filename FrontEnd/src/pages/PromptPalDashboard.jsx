@@ -3,7 +3,10 @@ import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import MainCard from "./Maincard";
-import { Morph } from "../components/morph";
+import { Morph } from "../components/Morph";
+import { Link } from 'react-router-dom';
+import { SparklesText } from "@/components/magicui/sparkles-text";
+
 import {
   Sparkles,
   Users,
@@ -146,12 +149,14 @@ export default function PromptPalDashboard() {
         </div>
 
         <div className="mt-8 flex justify-center">
+          <Link to="/home">
           <Button className="py-6 px-10 text-lg bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 shadow-lg hover:shadow-blue-500/50 transition-all duration-300 rounded-full text-white">
             <Sparkles className="mr-2 text-white" size={20} />
             Discover
           </Button>
+          </Link>
         </div>
-        
+
       </div>
 
     </div>
