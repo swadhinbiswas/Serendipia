@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Routes>
-      
+
         <Route path="/" element={<PromptPalDashboard />} />
         <Route path="/home"element={<Homepage/>}/>
 
@@ -23,3 +23,6 @@ function App() {
 }
 
 export default App;
+
+
+//  Ceake Commit
