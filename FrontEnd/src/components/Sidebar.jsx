@@ -265,7 +265,8 @@ export default function Sidebar() {
 
   useEffect(() => {
     // Store the dark mode preference in localStorage
-    localStorage.setItem("darkMode", darkMode);
+    const storedDarkMode = localStorage.getItem("darkMode") === null ? true : localStorage.getItem("darkMode") === "true";
+
   }, [darkMode]);
 
   return (
