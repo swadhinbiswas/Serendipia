@@ -8,7 +8,7 @@ const CLOUDFLARE_AUTH_TOKEN = import.meta.env.VITE_CLOUDFLARE_AUTH_TOKEN || "aq3
 
 export default function ChatComponent() {
   const [messages, setMessages] = useState([
-    { id: 1, text: "Hello! How can I help you today?", sender: "labratbot" },
+    { id: 1, text: "Hello! I am the LABRAT ,Born Redy to Help.Now I am expert On answering TextBased Questions.Just A DEMO .Feel Free To ASK ME !", sender: "labratbot" },
   ]);
   const [newMessage, setNewMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -82,7 +82,6 @@ export default function ChatComponent() {
       setIsLoading(false);
     }
   };
-  
 
   return (
     <div className="flex flex-col flex-grow h-full w-full bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-2xl border border-gray-700 overflow-hidden">
@@ -95,15 +94,30 @@ export default function ChatComponent() {
             transition={{ duration: 0.3 }}
             className={`flex items-start ${msg.sender === "You" ? "justify-end" : "justify-start"}`}
           >
+            {msg.sender === "labratbot" && (
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" // Replace with your bot avatar path
+                alt="Bot Avatar"
+                className="w-8 h-8 rounded-full mr-2"
+              />
+            )}
             <div
               className={`p-3 rounded-xl text-sm max-w-xs break-words shadow-md ${msg.sender === "You" ? "bg-blue-500 text-white" : "bg-gray-700 text-white"}`}
             >
               {msg.text}
+              {msg.sender === "labratbot" && msg.text === "" && isLoading && (
+                <span className="ml-1">I am thinking...</span>
+              )}
             </div>
           </motion.div>
         ))}
-        {isLoading && (
+        {isLoading && messages[messages.length - 1].sender === "You" &&(
           <div className="flex items-start">
+            <img
+              src="/bot_avatar.png" // Replace with your bot avatar path
+              alt="Bot Avatar"
+              className="w-8 h-8 rounded-full mr-2"
+            />
             <div className="bg-gray-700 text-white p-3 rounded-xl">
               <div className="flex space-x-1">
                 <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
