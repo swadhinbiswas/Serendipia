@@ -38,7 +38,7 @@ export default function ChatComponent() {
         message: newMessage,
       };
 
-      const response = await axios.post("/api", payload, {
+      const response = await axios.post("https://ai.rewuloqy.workers.dev", payload, {
         headers: { "Content-Type": "application/json" },
       });
 

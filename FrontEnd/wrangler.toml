@@ -1,7 +1,0 @@
-name = "ai" # Your project name
-location = "pages"
-account_id = "86d20513ca452bfb3c1c1de241e869f6" 
-
-[build]
-command = "bun run dev"
-publish = "."

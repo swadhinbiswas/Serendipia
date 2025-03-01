@@ -12,14 +12,14 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  server: {
-    proxy: {
-      "/api": {
-        target: "https://ai.rewuloqy.workers.dev",
-        changeOrigin: true,
-        secure: true, // Set to true unless using a self-signed certificate
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
-    },
-  },
+  // server: {
+  //   proxy: {
+  //     "/api": {
+  //       target: "https://ai.rewuloqy.workers.dev",
+  //       changeOrigin: true,
+  //       secure: true, // Set to true unless using a self-signed certificate
+  //       rewrite: (path) => path.replace(/^\/api/, ""),
+  //     },
+  //   },
+  // },
 });
