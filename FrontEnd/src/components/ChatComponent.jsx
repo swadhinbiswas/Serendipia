@@ -42,7 +42,15 @@ export default function ChatComponent() {
         headers: { "Content-Type": "application/json" },
       });
 
-      const botFullResponse = response.data?.result?.response || "Bot response not available";
+      let botFullResponse = response.data?.result?.response || "Bot response not available";
+
+      // Extract text after </think>
+      const thinkEndIndex = botFullResponse.indexOf("</think>");
+      if (thinkEndIndex !== -1) {
+        botFullResponse = botFullResponse.substring(thinkEndIndex + "</think>".length).trim();
+        // Remove newlines
+        botFullResponse = botFullResponse.replace(/\n/g, "");
+      }
 
       const botReply = { id: messages.length + 2, text: "", sender: "labratbot" };
       setMessages((prevMessages) => [...prevMessages, botReply]);
@@ -74,6 +82,7 @@ export default function ChatComponent() {
       setIsLoading(false);
     }
   };
+  
 
   return (
     <div className="flex flex-col flex-grow h-full w-full bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl shadow-2xl border border-gray-700 overflow-hidden">
